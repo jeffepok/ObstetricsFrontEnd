@@ -1,0 +1,7 @@
+{
+  "name": "ObstetricsFrontEnd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

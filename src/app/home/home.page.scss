@@ -1,27 +1,60 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-
 #container strong {
   font-size: 20px;
   line-height: 26px;
-}
 
+}
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
-
 #container a {
   text-decoration: none;
 }
+
+/* Styling for the tabs*/
+
+ion-label{
+  font-size: 17px;
+  font-family: Helvetica, sans-serif;
+}
+.tabs {
+  -webkit-justify-content: left !important;
+  justify-content: left !important;
+
+  --background: var(--ion-color-primary);
+}
+ion-tab-button {
+  --color: white;
+  --color-selected: var(--ion-color-primary-tint);
+}
+/* Background*/
+ion-content.home-page{
+    --background: url('../../assets/home/background/bgTop.png') no-repeat;
+
+}
+/* Main Body*/
+h1{
+  font-size: 70px;
+}
+h1.type-2{
+  color: white;
+}
+
+ion-item{
+  --padding-start: 30px;
+  --padding-top: 5px;
+}
+
+
+
+

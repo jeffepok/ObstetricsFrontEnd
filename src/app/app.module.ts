@@ -9,9 +9,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { CreateAccountPopOverComponentModule } from './home/create-account-pop-over/create-account-pop-over.module'
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    CreateAccountPopOverComponentModule
+  ],
   entryComponents: [
   ],
   imports: [

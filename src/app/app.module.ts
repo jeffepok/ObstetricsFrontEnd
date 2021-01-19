@@ -25,6 +25,7 @@ import { CreateAccountPopOverComponent } from
     IonicModule.forRoot(), 
     AppRoutingModule, 
     ReactiveFormsModule,
+    FormsModule
   ],
   providers: [
     StatusBar,

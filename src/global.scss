@@ -25,10 +25,7 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-.pop-over-style {
-    .popover-content {
-        //width: 80% !important; - this wont work or the bottom one.
-        --width: 1000px !important;
-    }
+.my-custom-class {
+    --background: #222;
+    --width: 450px;
   }
-  

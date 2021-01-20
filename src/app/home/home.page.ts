@@ -17,6 +17,7 @@ export class HomePage {
   async presentPopover(ev: any) {
     const popover = await this.popoverController.create({
       component: CreateAccountPopOverComponent,
+      cssClass: 'my-custom-class',
       event: ev,
       translucent: true,
       animated: true

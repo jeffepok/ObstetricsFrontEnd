@@ -5,46 +5,57 @@
     </ion-buttons>
     <ion-title>
     <ion-label><h1><strong>Create Account</strong></h1></ion-label>
-    <ion-label><h2>It's quick and easy</h2></ion-label>
+    <ion-label><h3>It's quick and easy</h3></ion-label>
   </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-card>
-    <ion-card-content>
+
       <form>
         <ion-grid>
-          <ion-row>
-            <ion-col>
-              <ion-item lines="full">
-                <ion-label position="floating">First name</ion-label>
-                <ion-input type="name" required></ion-input>
-              </ion-item>
-              <ion-item lines="full">
-                <ion-label position="floating">Last name</ion-label>
-                <ion-input type="name" required></ion-input>
-              </ion-item>
-
-              <ion-item lines="full">
-                <ion-label position="floating">Email</ion-label>
-                <ion-input type="email" required></ion-input>
-              </ion-item>
-      
-              <ion-item lines="full">
-                <ion-label position="floating">Password</ion-label>
-                <ion-input type="password" required></ion-input>
-              </ion-item>
+              <ion-row>
+                <ion-col>
+                  <ion-item class="input">
+                    <ion-input required="true" lines="none" placeholder="First name" type="name" required></ion-input>
+                  </ion-item>
+                </ion-col>
+                  <ion-col>
+                  <ion-item class="input">
+                    <ion-input placeholder="Last name" type="name" required></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <ion-item class="input">
+                    <ion-input placeholder="Email" type="email" required></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+            
+              <ion-row>
+                <ion-col>
+                  <ion-item class="input">
+                    <ion-input placeholder="Password" type="password" required></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
 
               <ion-row>
                 <ion-col>
-                  <ion-button type="submit" color="danger" expand="block">Sign Up</ion-button>
+                  <ion-item class="input">
+                    <ion-input placeholder="Confirm Password" type="password" required></ion-input>
+                  </ion-item>
                 </ion-col>
               </ion-row>
-          </ion-col>
-        </ion-row>
+              
+              <ion-row>
+                <ion-col>
+                  <ion-button type="submit" color="success" expand="block">Sign Up</ion-button>
+                </ion-col>
+              </ion-row>
+
       </ion-grid>
       </form>
-    </ion-card-content>
-  </ion-card>
 </ion-content>

@@ -1,7 +1,6 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-tabs>
-      <!-- Tab bar -->
+    <!-- <ion-tabs>
+
       <ion-tab-bar class="tabs" slot="top">
         <ion-tab-button tab="home" layout="icon-start">
           <ion-icon name="home"></ion-icon>
@@ -28,8 +27,8 @@
           <ion-label>Admin Panel</ion-label>
         </ion-tab-button>
       </ion-tab-bar>
-    </ion-tabs>
-  </ion-toolbar>
+    </ion-tabs> -->
+
 </ion-header>
 <ion-content class="home-page" >
   <ion-grid>
@@ -56,15 +55,21 @@
         <ion-card>
           <ion-card-content>
           <form>
-            <ion-item lines="full">
-              <ion-label position="floating">Email</ion-label>
-              <ion-input type="text" required></ion-input>
-            </ion-item>
-        
-            <ion-item lines="full">
-              <ion-label position="floating">Password</ion-label>
-              <ion-input type="password" required></ion-input>
-            </ion-item>
+            <ion-row>
+              <ion-col>
+                <ion-item class="input">
+                  <ion-input placeholder="Email" type="text" required></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col>
+                <ion-item class="input">
+                  <ion-input placeholder="Password" type="password" required></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
     
             <ion-row>
               <ion-col>

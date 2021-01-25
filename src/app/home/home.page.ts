@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { Validators, FormBuilder, FormGroup} from '@angular/forms';
 import { PopoverController } from '@ionic/angular';
-import { CreateAccountPopOverComponent } from './create-account-pop-over/create-account-pop-over.component';
+import { CreateAccountPopOverComponent } from './create-acount/create-account-pop-over/create-account-pop-over.component';
+
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
@@ -31,4 +32,8 @@ export class HomePage {
       phone: ['', [Validators.required]],
       email: ['', [Validators.email]]})
   }
+
+
+
+
 }

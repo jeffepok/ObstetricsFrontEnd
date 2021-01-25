@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 
@@ -20,9 +20,6 @@ export class CreateAccountService {
 
   constructor(private http: HttpClient) {}
   private RegistrationUrl = "http://127.0.0.1:8000/auth/users/";
-
-  private headers = new Headers({'Content-Type': 'application/json',
-  'Access-Control-Allow-Origin': '*'});
 
   createAccount(userDetails: UserDetails): Observable<UserDetails>{
     return this.http.post<UserDetails>(this.RegistrationUrl, userDetails)

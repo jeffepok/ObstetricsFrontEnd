@@ -4,7 +4,6 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { HomePageRoutingModule } from './home-routing.module';
-import { VerifyEmailComponent } from './verify-email/verify-email.component';
 
 
 @NgModule({
@@ -15,6 +14,6 @@ import { VerifyEmailComponent } from './verify-email/verify-email.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, VerifyEmailComponent]
+  declarations: [HomePage,]
 })
 export class HomePageModule {}

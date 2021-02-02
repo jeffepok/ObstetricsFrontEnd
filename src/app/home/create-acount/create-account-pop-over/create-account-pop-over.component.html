@@ -16,35 +16,7 @@
               <ion-row>
                 <ion-col>
                   <ion-item class="input">
-                    <ion-input formControlName = "first_name" required="true" lines="none" placeholder="First name" type="name" required></ion-input>
-                  </ion-item>
-                </ion-col>
-                  <ion-col>
-                  <ion-item class="input">
-                    <ion-input formControlName = "last_name" placeholder="Last name" type="name" required></ion-input>
-                  </ion-item>
-                </ion-col>
-              </ion-row> 
-              <ion-row>
-                <ion-col>
-                  <ion-item class="input">
                     <ion-input formControlName = "email" placeholder="Email" type="email" required></ion-input>
-                  </ion-item>
-                </ion-col>
-              </ion-row>
-
-              <ion-row>
-                <ion-col>
-                  <ion-item class="input">
-                    <ion-input formControlName = "username" placeholder="Username" type="name" required></ion-input>
-                  </ion-item>
-                </ion-col>
-              </ion-row>
-
-              <ion-row>
-                <ion-col>
-                  <ion-item class="input">
-                    <ion-input formControlName = "phone" placeholder="Phone Number" type="phone" required></ion-input>
                   </ion-item>
                 </ion-col>
               </ion-row>
@@ -67,7 +39,7 @@
 
               <ion-row>
                 <ion-col>
-                  <ion-button (click)="createAccount(registrationForm.value)" type="submit" color="success" expand="block">Sign Up</ion-button>
+                  <ion-button (click)="dismissPopover(); createAccount(registrationForm.value)" type="submit" color="success" expand="block">Sign Up</ion-button>
                 </ion-col>
               </ion-row>
               <ion-row>

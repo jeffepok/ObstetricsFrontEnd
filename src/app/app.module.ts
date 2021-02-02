@@ -11,17 +11,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { CreateAccountPopOverComponent } from 
-'./home/create-acount/create-account-pop-over/create-account-pop-over.component';
+import { CookieService } from 'ngx-cookie-service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateAccountPopOverComponent,
   ],
   entryComponents: [
-    CreateAccountPopOverComponent,
-
   ],
   imports: [
     BrowserModule, 
@@ -34,6 +31,7 @@ import { CreateAccountPopOverComponent } from
   providers: [
     StatusBar,
     SplashScreen,
+    CookieService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

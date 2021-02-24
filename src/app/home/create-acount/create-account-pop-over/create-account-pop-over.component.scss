@@ -1,0 +1,15 @@
+ion-label{
+    --padding: 50px;
+}
+ion-item.input{
+    border-radius: 10px !important;
+    padding-right: 30px;
+    font-size: 0.9em;
+    border: 1px solid #bad3f0 !important;
+
+    /* height: 10%; */
+    /* width: 41%; */
+    max-width: 50vw; // this is applying perfectly
+    max-height: 10vh;
+}
+

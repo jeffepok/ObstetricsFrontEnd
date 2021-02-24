@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-tabs>
+    <ion-tab-bar class="tabs" slot="top">
+      <ion-tab-button tab="home" layout="icon-start">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile" layout="icon-start">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="readMore" layout="icon-start">
+        <ion-icon name="book"></ion-icon>
+        <ion-label>Read More</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="contact" layout="icon-start">
+        <ion-icon name="call"></ion-icon>
+        <ion-label>Contact</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="admin" layout="icon-start">
+        <ion-icon name="construct"></ion-icon>
+        <ion-label>Admin Panel</ion-label>
+      </ion-tab-button>
+      <ion-button layout="icon-start" class="logoutTab" (click)="logout();">
+        <ion-icon name="log-out-outline"></ion-icon>
+        logout
+      </ion-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="user-profile-page">
+  <div class="container">
+    <div class="top">
+      <ion-card>
+        <ion-card-header>
+          <strong>Welcome</strong>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item>
+            {{userName}}
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <div class="horizontal">
+
+      <div class="left">
+        <ion-card class="info-panel">
+          <ion-card-content>
+            <ion-item lines="none">
+              <ion-label>
+                <strong>User Data</strong>
+              </ion-label>
+            </ion-item>
+
+            <ion-item class="clickable-item" [routerLink]="[{ outlets: { info: ['biodata'] } }]"
+              lines="none" button="true" class="ion-activated">
+              <ion-label>Bio-Data of Mother</ion-label>
+            </ion-item>
+            
+            
+            <ion-item lines="none" button="true"
+            [routerLink]="['familyidentity']">
+              <ion-label>Family Identification</ion-label>
+            </ion-item>
+            <ion-item lines="none" button="true" class="ion-activated">
+              Previous Pregnancy History
+            </ion-item>
+            <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+              <ion-label>Current Pregnancy Record</ion-label>
+            </ion-item>
+            <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+              <ion-label>Pregnancy Investigations</ion-label>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <div class="right">
+        <ion-router-outlet name="info"></ion-router-outlet>
+      </div>
+    </div>
+  </div>
+  
+</ion-content>
+
+
+
+
+
+
+

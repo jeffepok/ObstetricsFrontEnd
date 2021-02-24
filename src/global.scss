@@ -31,78 +31,32 @@
   }
 
 
-#container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-
-}
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-  color: #8c8c8c;
-  margin: 0;
-}
 #container a {
   text-decoration: none;
 }
 
-/* Styling for the tabs*/
-.tabs {
-  -webkit-justify-content: left !important;
-  justify-content: left !important;
-
-  --background: var(--ion-color-primary);
-}
-
-ion-label{
-  font-size: 17px;
-  font-family: Helvetica, sans-serif;
-}
+/* Main Body*/
 
 
-ion-tab-button {
-  --color: white;
-  --color-selected: var(--ion-color-primary-tint);
-}
+// Ionic components styling
+
+
 /* Background*/
+// the background for the home page
 ion-content.home-page{
     --background: url('./assets/home/background/bgTop.png') no-repeat;
 
 }
+// the background for the user-profile page 
 ion-content.user-profile-page{
   --background: url('./assets/home/background/bgTop.png') no-repeat;
 
 }
 
-/* Main Body*/
-h1.big{
-  font-size: 70px;
-}
-h1.type-2{
-  color: white;
-}
-
-ion-item{
-  --padding-start: 30px;
-}
 
 ion-item.input{
   border-radius: 10px !important;
-  padding-right: 30px;
-  font-size: 1em;
   border: 1px solid #bad3f0 !important;
-  /* height: 10%; */
-  /* width: 41%; */
-  max-width: 50vw; // this is applying perfectly
-  max-height: 10vh;
 }
 
 

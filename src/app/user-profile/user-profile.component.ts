@@ -16,6 +16,7 @@ export class UserProfileComponent implements OnInit {
   constructor(
     private cookie: CookieService,
     private loginService: LoginService
+    
   ) { }
   
   ngOnInit() {

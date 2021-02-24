@@ -31,7 +31,6 @@ export class HomePage {
       animated: true
     });
     return await popover.present();
-
   }
 
   ngOnInit(): void {
@@ -51,8 +50,5 @@ export class HomePage {
       }
       )
   }
-
-
-
 
 }

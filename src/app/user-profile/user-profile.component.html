@@ -46,44 +46,47 @@
       </ion-card>
     </div>
 
-    <div  class="horizontal">
+    <div class="data-wrapper">
 
-      <div class="left">
-        <ion-card class="menu">
-          <ion-card-content>
-            <ion-item lines="none">
-              <ion-label>
-                <strong>User Data</strong>
-              </ion-label>
-            </ion-item>
-            <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-              <ion-label>Bio-Data of Mother</ion-label>
-            </ion-item>
-            <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-              <ion-label>Family Identification</ion-label>
-            </ion-item>
-            <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-              Previous Pregnancy History
-            </ion-item>
-            <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-              <ion-label>Current Pregnancy Record</ion-label>
-            </ion-item>
-            <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-              <ion-label>Pregnancy Investigations</ion-label>
-            </ion-item>
-          </ion-card-content>
-        </ion-card>
-      </div>
-
-      <div class="right">
-        <ion-card>
-          <ion-card-content>
-            <ion-item lines="none">
-              Data Record, manipulation, pregnancy, obsterics
-            </ion-item>
-          </ion-card-content>
-        </ion-card>
-      </div>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-card class="menu">
+              <ion-card-content>
+                <ion-item lines="none">
+                  <ion-label>
+                    <strong>User Data</strong>
+                  </ion-label>
+                </ion-item>
+                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+                  <ion-label>Bio-Data of Mother</ion-label>
+                </ion-item>
+                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+                  <ion-label>Family Identification</ion-label>
+                </ion-item>
+                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+                  Previous Pregnancy History
+                </ion-item>
+                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+                  <ion-label>Current Pregnancy Record</ion-label>
+                </ion-item>
+                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+                  <ion-label>Pregnancy Investigations</ion-label>
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+            <ion-card id="info-panel">
+              <ion-card-content>
+                <ion-item lines="none">
+                  Data Record, manipulation, pregnancy, obsterics
+                </ion-item>
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
     </div>
 

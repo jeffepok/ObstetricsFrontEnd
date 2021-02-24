@@ -1,25 +1,12 @@
 // padding for Data ion-card
-
-// div.container {
-//     margin: auto;
-//     width: 70%;
-//     margin-top: 1px;
-//   }
-// div.horizontal{
-//     display: flex;
-//     padding-right: 0px;
-// }
-// ion-card{
-//     height: 100%;
-//     margin-right: 0.5px;
-//     margin-left: 0.5px;
-// }
-// div.left{
-//     width: 35%;
-// }
-// ion-card-content{
-//     padding: 0px;
-// }
-// div.right{
-//     width: 100%;    
-// }
+.container{
+    width: 70%;
+    margin: auto;
+}
+//line the data-wrapper with the top card
+.data-wrapper ion-card{
+    margin: 0px;
+}
+.data-wrapper #info-panel{
+    height: 100%;
+}

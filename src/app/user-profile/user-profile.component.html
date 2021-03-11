@@ -1,35 +1,4 @@
-<ion-header>
-  <ion-tabs>
 
-    <ion-tab-bar class="tabs" slot="top">
-      <ion-tab-button tab="home" layout="icon-start">
-        <ion-icon name="home"></ion-icon>
-        <ion-label>Home</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="profile" layout="icon-start">
-        <ion-icon name="person"></ion-icon>
-        <ion-label>Profile</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="readMore" layout="icon-start">
-        <ion-icon name="book"></ion-icon>
-        <ion-label>Read More</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="contact" layout="icon-start">
-        <ion-icon name="call"></ion-icon>
-        <ion-label>Contact</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="admin" layout="icon-start">
-        <ion-icon name="construct"></ion-icon>
-        <ion-label>Admin Panel</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
-
-</ion-header>
 <ion-content class="user-profile-page">
   <div class="container">
     <div>
@@ -47,53 +16,40 @@
     </div>
 
     <div class="data-wrapper">
-
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-card class="menu">
-              <ion-card-content>
-                <ion-item lines="none">
-                  <ion-label>
-                    <strong>User Data</strong>
-                  </ion-label>
-                </ion-item>
-                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-                  <ion-label>Bio-Data of Mother</ion-label>
-                </ion-item>
-                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-                  <ion-label>Family Identification</ion-label>
-                </ion-item>
-                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-                  Previous Pregnancy History
-                </ion-item>
-                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-                  <ion-label>Current Pregnancy Record</ion-label>
-                </ion-item>
-                <ion-item routerLinkActive="selected" lines="none" button="true" class="ion-activated">
-                  <ion-label>Pregnancy Investigations</ion-label>
-                </ion-item>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-          <ion-col>
-            <ion-card id="info-panel">
-              <ion-card-content>
-                <ion-item lines="none">
-                  Data Record, manipulation, pregnancy, obsterics
-                </ion-item>
-              </ion-card-content>
-            </ion-card>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+      <div class="menu">
+        <ion-card >
+          <ion-card-content>
+            <ion-item lines="none">
+              <ion-label>
+                <strong>User Data</strong>
+              </ion-label>
+            </ion-item>
+            <ion-item [routerLink]="['/user-profile/biodata']" routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+              <ion-label>Bio-Data of Mother</ion-label>
+            </ion-item>
+            <ion-item [routerLink]="['/user-profile/family-identification']" routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+              <ion-label>Family Identification</ion-label>
+            </ion-item>
+            <ion-item [routerLink]="['/user-profile/previous-pregnancy-history']"routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+              Previous Pregnancy History
+            </ion-item>
+            <ion-item [routerLink]="['/user-profile/current-pregnancy-record']" routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+              <ion-label>Current Pregnancy Record</ion-label>
+            </ion-item>
+            <ion-item [routerLink]="['/user-profile/pregnancy-investigations']"routerLinkActive="selected" lines="none" button="true" class="ion-activated">
+              <ion-label>Pregnancy Investigations</ion-label>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </div>           
+      <div class="info-panel">         
+            <ion-router-outlet></ion-router-outlet>
+      </div>
 
     </div>
 
-    
   </div>
 </ion-content>
-
 
 
 

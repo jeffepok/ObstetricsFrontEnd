@@ -25,6 +25,7 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+
 .my-custom-class {
     --background: #222;
     --width: 450px;
@@ -59,6 +60,15 @@ ion-item.input{
   border: 1px solid #bad3f0 !important;
 }
 
+.heading{
+  font-weight: 500;
+}
+
+#info-panel{
+  margin-left: 36%;
+  margin-top: 10.5%;
+  width:48.3%;
+}
 
 
 

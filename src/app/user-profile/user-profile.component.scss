@@ -4,9 +4,14 @@
     margin: auto;
 }
 //line the data-wrapper with the top card
-.data-wrapper ion-card{
-    margin: 0px;
+.menu{
+    width: 30%;
 }
-.data-wrapper #info-panel{
-    height: 100%;
+
+.info-panel{
+    height: 500px;
 }
+.data-wrapper{
+    border: 2px solid red;
+}
+
